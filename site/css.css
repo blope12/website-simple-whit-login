@@ -1,0 +1,322 @@
+body{
+background-image:url(bg1.png);
+background-repeat: no-repeat;
+background-size: cover;
+}
+*{
+    font-family: "MuseoModerno", sans-serif;
+
+}
+.container {
+    max-width: 1050px;
+    width: 100%;
+    z-index: 5;
+    margin: auto;
+  }
+
+.navbar {
+    width: 100%;
+border-bottom: 2px solid #ff004c; 
+z-index: 99;
+
+
+}
+  
+  .nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+  }
+  
+  .navbar .menu-items {
+    display: flex;
+  }
+  
+  .navbar .nav-container li {
+    list-style: none;
+  }
+  
+  .navbar .nav-container a {
+    text-decoration: none;
+    color: #ff004c;
+    font-weight: 500;
+    font-size: 2.2rem;
+    padding: 0.7rem;
+  }
+  
+  .navbar .nav-container a:hover{
+      font-weight: bolder;
+  }
+  
+  .nav-container {
+    display: block;
+    position: relative;
+    height: 60px;
+  }
+  
+  .nav-container .checkbox {
+    position: absolute;
+    display: block;
+    height: 40px;
+    width: 40px;
+    top: 14px;
+    left: 15px;
+    z-index: 5;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  .nav-container .hamburger-lines {
+    display: block;
+    height: 26px;
+    width: 32px;
+    position: absolute;
+    top: 17px;
+    left: 20px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .nav-container .hamburger-lines .line {
+    display: block;
+    height: 4px;
+    width: 100%;
+    border-radius: 20px;
+    background: #ff004c;
+  }
+  
+  .nav-container .hamburger-lines .line1 {
+    transform-origin: 0% 0%;
+    transition: transform 0.4s ease-in-out;
+  }
+  
+  .nav-container .hamburger-lines .line2 {
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .nav-container .hamburger-lines .line3 {
+    transform-origin: 0% 100%;
+    transition: transform 0.4s ease-in-out;
+  }
+  
+  .navbar .menu-items {
+    background-color: #7e1736;
+    padding-top: 120px;
+    box-shadow: inset 0 0 2000px #ff004c;
+    height: 100vh;
+    width: 100%;
+    transform: translate(-150%);
+    display: flex;
+    flex-direction: column;
+    margin-left: -40px;
+    padding-left: 50px;
+    transition: transform 0.5s ease-in-out;
+    text-align: center;
+  }
+  
+  .navbar .menu-items li {
+    margin-bottom: 1.2rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+  
+  
+  
+  .nav-container input[type="checkbox"]:checked ~ .menu-items {
+    transform: translateX(0);
+  }
+  
+  .nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
+    transform: rotate(45deg);
+  }
+  
+  .nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line2 {
+    transform: scaleY(0);
+  }
+  
+  .nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
+    transform: rotate(-45deg);
+  }
+  
+  .nav-container input[type="checkbox"]:checked ~ .logo{
+    display: none;
+  }
+
+
+.log-menu{
+border-top: 4px solid #ff004c;
+color: white;
+
+}
+
+
+
+
+
+
+
+
+
+.header-cont {
+    display: flex;
+    justify-content: space-between; /* برای قرار دادن المان‌ها به صورت خطی و انتهای صفحه */
+    align-items: center; /* برای تراز کردن افقی اجزای داخل .header-cont */
+}
+.header-cont .active-home{
+    color: #ff004c;
+
+
+
+
+}
+
+.header-cont ul {
+    list-style-type: none; /* حذف نشانگرهای لیست */
+    display: flex; /* تنظیم مراکز به صورت خطی */
+    align-items: center;
+    justify-content: center;
+    margin: 10px auto;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.header-cont ul li {
+    margin: 20px;
+    transition: all 0.4s ease; /* افزودن انیمیشن به تغییر اندازه متن */
+    color: white;
+}
+
+.header-cont ul li:hover {
+    transform: scale(1.3); /* افزایش اندازه با استفاده از transform */
+    color: #ff004c;
+}
+
+
+.btn-hed{
+    position: absolute;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 10px;
+    background-color: #ff004c;
+    color: #fff;
+    cursor: pointer;
+    font-size: 25px;
+    font-weight: bold;
+    right: 20px; /* جابجایی به سمت راست با 20px از حاشیه راست */
+    transition: transform 0.4s ease; /* افزودن انیمیشن به تغییر اندازه متن */
+}
+
+.btn-hed a{
+color: #fff;
+text-decoration: none;
+
+}
+
+.btn-hed:hover{
+    transform: scale(1.2); /* افزایش اندازه با استفاده از transform */
+}
+
+.main-cont{
+position: relative;
+top: 50px;
+left: 140px;
+width: 600px;
+height: 400px;
+
+}
+
+.main-cont h1{
+font-size: 80px;
+padding-bottom: 0px;
+}
+
+.main-cont p{
+padding:0px;
+font-size: 20px;
+}
+.main-cont .btn-cont-1{
+position: relative;
+    border: none;
+    border-radius: 10px;
+    background-color: #ff004c;
+    color: #fff;
+    cursor: pointer;
+    font-size: 40px;
+    font-weight: bold;
+    transition: transform 0.4s ease; /* افزودن انیمیشن به تغییر اندازه متن */
+    margin-left: 20px;
+    left: 20%;
+}
+.main-cont .btn-cont-2{
+position: relative;
+    border: 3px solid #ff004c;
+    border-radius: 10px;
+    background-color: transparent;
+    color: #fff;
+    cursor: pointer;
+    font-size: 40px;
+    font-weight: bold;
+    transition: transform 0.4s ease; /* افزودن انیمیشن به تغییر اندازه متن */
+    margin-left: 20px;
+    left: 20%;
+
+}
+
+.main-cont .btn-cont-2:hover{
+    transform: scale(1.2); /* افزایش اندازه با استفاده از transform */
+}
+.main-cont .btn-cont-1:hover{
+    transform: scale(1.2); /* افزایش اندازه با استفاده از transform */
+}
+
+
+/* تنظیمات برای محیط موبایل */
+@media only screen and (max-width: 600px) {
+    /* تنظیمات برای تصویر پس زمینه */
+    body {
+        background-size: 1400px ;
+}
+
+    /* تنظیمات برای هدر */
+    .header-cont {
+display: none;
+    }
+
+
+    /* تنظیمات برای محتوای اصلی */
+    .main-cont {
+        position: relative; /* حذف موقعیت نسبی */
+        left: auto; /* حذف موقعیت نسبی */
+        width: auto; /* حذف عرض ثابت */
+        margin: 20px 0; /* فاصله بین المان‌ها */
+        text-align: center; /* تراز کردن متن به وسط */
+    }
+
+    .main-cont h1 {
+        font-size: 40px; /* کوچک‌تر کردن اندازه متن */
+    }
+
+    .main-cont p {
+        font-size: 16px; /* کوچک‌تر کردن اندازه متن */
+    }
+
+    .main-cont .btn-cont-1,
+    .main-cont .btn-cont-2 {
+        font-size: 30px; /* کوچک‌تر کردن اندازه متن */
+        left: 0%;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+
+    .navbar{
+        display: none;
+    }
+
+}
+
+
+

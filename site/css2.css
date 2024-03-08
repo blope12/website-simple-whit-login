@@ -1,0 +1,76 @@
+body{
+padding: 0;
+margin: 0;
+background-image:url(bg1.png);
+background-repeat: no-repeat;
+background-size: cover;
+}
+*{
+    font-family: "MuseoModerno", sans-serif;
+}
+
+.cont{
+display: flex;
+align-items: center;
+justify-content: center;
+text-align: center;
+height: 100vh;
+}
+
+.content {
+height: 500px;
+width: 500px;
+background-color: transparent;
+border: 5px solid #ff0037;
+border-radius: 20px;
+backdrop-filter: blur(10px); /* تنظیم ترمینال برای انتقال اندازه */
+}
+
+.content .h1-{
+font-size: 35px;
+font-weight: bold;
+color: #fff;
+}
+.inputs {
+    display: flex;
+    flex-direction: column; /* تنظیم روی زیر هم */
+    align-items: center; /* تراز کردن ورودی‌ها به وسط */
+}
+.input::placeholder{
+    color:  white; /* رنگ متن در داخل ورودی‌ها */
+
+
+}
+.input {
+    position: relative;
+    top: 50px;
+    margin: 10px;
+    padding: 16px 25px;
+    border: 2px solid #ff0037;
+    border-radius: 10px;
+    font-size: 24px;
+    text-align: center;
+    color: #ff0037; /* رنگ متن در داخل ورودی‌ها */
+    background: rgba(43, 43, 43, 0.24);
+    backdrop-filter: blur(10px); /* تنظیم ترمینال برای انتقال اندازه */
+
+}
+.inputs button{
+    position: relative;
+    padding: 8px 16px;
+    border: 2px solid #ff0037;
+    border-radius: 10px;
+    background-color: transparent;
+    color: #fff;
+    cursor: pointer;
+    top: 120px;
+    font-size: 25px;
+    font-weight: bold;
+    transition: all 0.4s ease; /* افزودن انیمیشن به تغییر اندازه متن */
+}
+.inputs button:hover{
+    background-color: #ff0037;
+
+    transform: scale(1.2); /* افزایش اندازه با استفاده از transform */
+
+}
